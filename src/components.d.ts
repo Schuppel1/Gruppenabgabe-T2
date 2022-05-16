@@ -6,8 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface DropDown {
-    }
     interface ExampleComponent {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
@@ -26,14 +24,10 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface ScrollButton {
+    }
 }
 declare global {
-    interface HTMLDropDownElement extends Components.DropDown, HTMLStencilElement {
-    }
-    var HTMLDropDownElement: {
-        prototype: HTMLDropDownElement;
-        new (): HTMLDropDownElement;
-    };
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
     }
     var HTMLExampleComponentElement: {
@@ -46,15 +40,19 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLScrollButtonElement extends Components.ScrollButton, HTMLStencilElement {
+    }
+    var HTMLScrollButtonElement: {
+        prototype: HTMLScrollButtonElement;
+        new (): HTMLScrollButtonElement;
+    };
     interface HTMLElementTagNameMap {
-        "drop-down": HTMLDropDownElement;
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "scroll-button": HTMLScrollButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface DropDown {
-    }
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
@@ -73,19 +71,21 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface ScrollButton {
+    }
     interface IntrinsicElements {
-        "drop-down": DropDown;
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "scroll-button": ScrollButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "drop-down": LocalJSX.DropDown & JSXBase.HTMLAttributes<HTMLDropDownElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "scroll-button": LocalJSX.ScrollButton & JSXBase.HTMLAttributes<HTMLScrollButtonElement>;
         }
     }
 }
