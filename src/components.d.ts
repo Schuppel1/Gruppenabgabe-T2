@@ -24,11 +24,25 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PriceTable {
+        "detailone": string;
+        "detailoneone": string;
+        "detailonethree": string;
+        "detailonetwo": string;
+        "detailthree": string;
+        "detailthreeone": string;
+        "detailthreethree": string;
+        "detailthreetwo": string;
+        "detailtwo": string;
+        "detailtwoone": string;
+        "detailtwothree": string;
+        "detailtwotwo": string;
+        "product": string;
+        "productthree": string;
+        "producttwo": string;
+    }
     interface QrGenerator {
         "link": string;
-    }
-    interface TimerCountdown {
-        "time": number;
     }
 }
 declare global {
@@ -44,23 +58,23 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPriceTableElement extends Components.PriceTable, HTMLStencilElement {
+    }
+    var HTMLPriceTableElement: {
+        prototype: HTMLPriceTableElement;
+        new (): HTMLPriceTableElement;
+    };
     interface HTMLQrGeneratorElement extends Components.QrGenerator, HTMLStencilElement {
     }
     var HTMLQrGeneratorElement: {
         prototype: HTMLQrGeneratorElement;
         new (): HTMLQrGeneratorElement;
     };
-    interface HTMLTimerCountdownElement extends Components.TimerCountdown, HTMLStencilElement {
-    }
-    var HTMLTimerCountdownElement: {
-        prototype: HTMLTimerCountdownElement;
-        new (): HTMLTimerCountdownElement;
-    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "price-table": HTMLPriceTableElement;
         "qr-generator": HTMLQrGeneratorElement;
-        "timer-countdown": HTMLTimerCountdownElement;
     }
 }
 declare namespace LocalJSX {
@@ -82,17 +96,31 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PriceTable {
+        "detailone"?: string;
+        "detailoneone"?: string;
+        "detailonethree"?: string;
+        "detailonetwo"?: string;
+        "detailthree"?: string;
+        "detailthreeone"?: string;
+        "detailthreethree"?: string;
+        "detailthreetwo"?: string;
+        "detailtwo"?: string;
+        "detailtwoone"?: string;
+        "detailtwothree"?: string;
+        "detailtwotwo"?: string;
+        "product"?: string;
+        "productthree"?: string;
+        "producttwo"?: string;
+    }
     interface QrGenerator {
         "link"?: string;
-    }
-    interface TimerCountdown {
-        "time"?: number;
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "price-table": PriceTable;
         "qr-generator": QrGenerator;
-        "timer-countdown": TimerCountdown;
     }
 }
 export { LocalJSX as JSX };
@@ -101,8 +129,8 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "price-table": LocalJSX.PriceTable & JSXBase.HTMLAttributes<HTMLPriceTableElement>;
             "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
-            "timer-countdown": LocalJSX.TimerCountdown & JSXBase.HTMLAttributes<HTMLTimerCountdownElement>;
         }
     }
 }
