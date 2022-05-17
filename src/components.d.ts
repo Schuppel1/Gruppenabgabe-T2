@@ -61,7 +61,10 @@ export namespace Components {
          */
         "middle": string;
     }
-
+    interface PictureCarousel {
+        "frequency": string;
+        "imgsrcs": string;
+    }
     interface PriceTable {
         "detailone": string;
         "detailoneone": string;
@@ -78,16 +81,10 @@ export namespace Components {
         "product": string;
         "productthree": string;
         "producttwo": string;
-
-    interface PictureCarousel {
-        "frequency": string;
-        "imgsrcs": string;
-
     }
     interface QrGenerator {
         "link": string;
     }
-
     interface TitleDesc {
         "desc": string;
         "price": string;
@@ -149,19 +146,17 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
-
-    interface HTMLPriceTableElement extends Components.PriceTable, HTMLStencilElement {
-    }
-    var HTMLPriceTableElement: {
-        prototype: HTMLPriceTableElement;
-        new (): HTMLPriceTableElement;
-
     interface HTMLPictureCarouselElement extends Components.PictureCarousel, HTMLStencilElement {
     }
     var HTMLPictureCarouselElement: {
         prototype: HTMLPictureCarouselElement;
         new (): HTMLPictureCarouselElement;
-
+    };
+    interface HTMLPriceTableElement extends Components.PriceTable, HTMLStencilElement {
+    }
+    var HTMLPriceTableElement: {
+        prototype: HTMLPriceTableElement;
+        new (): HTMLPriceTableElement;
     };
     interface HTMLQrGeneratorElement extends Components.QrGenerator, HTMLStencilElement {
     }
@@ -169,14 +164,12 @@ declare global {
         prototype: HTMLQrGeneratorElement;
         new (): HTMLQrGeneratorElement;
     };
-
     interface HTMLTitleDescElement extends Components.TitleDesc, HTMLStencilElement {
     }
     var HTMLTitleDescElement: {
         prototype: HTMLTitleDescElement;
         new (): HTMLTitleDescElement;
     };
-
     interface HTMLElementTagNameMap {
         "age-alert": HTMLAgeAlertElement;
         "card-flip": HTMLCardFlipElement;
@@ -187,13 +180,10 @@ declare global {
         "header-component": HTMLHeaderComponentElement;
         "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
-
-        "price-table": HTMLPriceTableElement;
-
         "picture-carousel": HTMLPictureCarouselElement;
+        "price-table": HTMLPriceTableElement;
         "qr-generator": HTMLQrGeneratorElement;
         "title-desc": HTMLTitleDescElement;
-
     }
 }
 declare namespace LocalJSX {
@@ -252,7 +242,10 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
-
+    interface PictureCarousel {
+        "frequency"?: string;
+        "imgsrcs"?: string;
+    }
     interface PriceTable {
         "detailone"?: string;
         "detailoneone"?: string;
@@ -269,22 +262,15 @@ declare namespace LocalJSX {
         "product"?: string;
         "productthree"?: string;
         "producttwo"?: string;
-
-    interface PictureCarousel {
-        "frequency"?: string;
-        "imgsrcs"?: string;
-
     }
     interface QrGenerator {
         "link"?: string;
     }
-
     interface TitleDesc {
         "desc"?: string;
         "price"?: string;
         "texttitle"?: string;
     }
-
     interface IntrinsicElements {
         "age-alert": AgeAlert;
         "card-flip": CardFlip;
@@ -295,13 +281,10 @@ declare namespace LocalJSX {
         "header-component": HeaderComponent;
         "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
-
-        "price-table": PriceTable;
-
         "picture-carousel": PictureCarousel;
+        "price-table": PriceTable;
         "qr-generator": QrGenerator;
         "title-desc": TitleDesc;
-
     }
 }
 export { LocalJSX as JSX };
@@ -317,8 +300,8 @@ declare module "@stencil/core" {
             "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
             "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
-            "price-table": LocalJSX.PriceTable & JSXBase.HTMLAttributes<HTMLPriceTableElement>;
             "picture-carousel": LocalJSX.PictureCarousel & JSXBase.HTMLAttributes<HTMLPictureCarouselElement>;
+            "price-table": LocalJSX.PriceTable & JSXBase.HTMLAttributes<HTMLPriceTableElement>;
             "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
             "title-desc": LocalJSX.TitleDesc & JSXBase.HTMLAttributes<HTMLTitleDescElement>;
         }
