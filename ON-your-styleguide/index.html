@@ -13,22 +13,21 @@
 
 <body>
 
-    <picture-carousel frequency="5s"
-    imgsrcs="./images/Beer1.png|./images/Beer2.jpg|./images/Beer3.jpg|./images/Beer4.jpg"></picture-carousel>
+    <age-alert header="Altersnachweis"
+    text="Um bei uns auf der Seite verweilen zu können, müssen Sie mindestens 18 Jahre alt sein. Bitte bestätigen Sie das nachfolgend..."
+    buttontext="Ja" buttontextremove="Nein"></age-alert>
+  
+    <cookie-banner header="Datenschutzeinstellung"
+    text="Wir nutzen Cookies unserem Shop. Einige sind notwendig, während andere uns helfen, den Shop und die Besuchererfahrungen zu verbessern.Bitte bestätigen sie nachfolgend, dass Cookies erhoben werden dürfen."
+    linkguides="Zu unseren AGB's" link="https://www.spirituosen-superbillig.com/Datenschutz.html"
+    buttontext="Annehmen" buttontextremove="Ablehnen"></cookie-banner>
 
     <header-component 
     firstnav="index" secondnav="shop">
     </header-component>
 
-    <!-- <age-alert header="Altersnachweis"
-    text="Um bei uns auf der Seite verweilen zu können, müssen Sie mindestens 18 Jahre alt sein. Bitte bestätigen Sie das nachfolgend..."
-    buttontext="Ja" buttontextremove="Nein"></age-alert> -->
-
-  
-    <!-- <cookie-banner header="Datenschutzeinstellung"
-    text="Wir nutzen Cookies unserem Shop. Einige sind notwendig, während andere uns helfen, den Shop und die Besuchererfahrungen zu verbessern.Bitte bestätigen sie nachfolgend, dass Cookies erhoben werden dürfen."
-    linkguides="Zu unseren AGB's" link="https://www.spirituosen-superbillig.com/Datenschutz.html"
-    buttontext="Annehmen" buttontextremove="Ablehnen"></cookie-banner> -->
+    <picture-carousel frequency="5s"
+    imgsrcs="./images/Beer1.png|./images/Beer2.jpg|./images/Beer3.jpg|./images/Beer4.jpg"></picture-carousel>
 
     <card-flip>
         <slot slot="front"> 

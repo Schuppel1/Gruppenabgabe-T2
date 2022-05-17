@@ -1,4 +1,5 @@
 :host {
+  top: 25%;
   display: flex;
   color:#F7F4EF;
   position: sticky;
