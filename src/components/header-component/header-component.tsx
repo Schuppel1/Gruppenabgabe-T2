@@ -22,7 +22,7 @@ export class headerComponent {
           <ul>
             <li><a href={`${this.firstnav}.html`}>{this.firstnav}</a></li>
             <li><a href={`${this.secondnav}.html`}>{this.secondnav}</a></li>
-            <li><a href={`${this.thirdnav}.html`}>{this.thirdnav}</a></li>
+            <li><a href="#contact">{this.thirdnav}</a></li>
           </ul>
         </nav>
 
