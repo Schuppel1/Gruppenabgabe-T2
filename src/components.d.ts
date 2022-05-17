@@ -61,6 +61,10 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PictureCarousel {
+        "frequency": string;
+        "imgsrcs": string;
+    }
     interface QrGenerator {
         "link": string;
     }
@@ -125,6 +129,12 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPictureCarouselElement extends Components.PictureCarousel, HTMLStencilElement {
+    }
+    var HTMLPictureCarouselElement: {
+        prototype: HTMLPictureCarouselElement;
+        new (): HTMLPictureCarouselElement;
+    }
     interface HTMLQrGeneratorElement extends Components.QrGenerator, HTMLStencilElement {
     }
     var HTMLQrGeneratorElement: {
@@ -147,6 +157,7 @@ declare global {
         "header-component": HTMLHeaderComponentElement;
         "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
+        "picture-carousel": HTMLPictureCarouselElement;
         "qr-generator": HTMLQrGeneratorElement;
         "title-desc": HTMLTitleDescElement;
     }
@@ -207,6 +218,10 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PictureCarousel {
+        "frequency"?: string;
+        "imgsrcs"?: string;
+    }
     interface QrGenerator {
         "link"?: string;
     }
@@ -225,6 +240,7 @@ declare namespace LocalJSX {
         "header-component": HeaderComponent;
         "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
+        "picture-carousel": PictureCarousel;
         "qr-generator": QrGenerator;
         "title-desc": TitleDesc;
     }
@@ -242,6 +258,7 @@ declare module "@stencil/core" {
             "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
             "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "picture-carousel": LocalJSX.PictureCarousel & JSXBase.HTMLAttributes<HTMLPictureCarouselElement>;
             "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
             "title-desc": LocalJSX.TitleDesc & JSXBase.HTMLAttributes<HTMLTitleDescElement>;
         }
