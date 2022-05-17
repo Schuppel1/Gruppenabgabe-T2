@@ -1,5 +1,6 @@
 import { Component, Host, h, Prop } from '@stencil/core';
 
+let body:HTMLElement;
 let componentElement:ShadowRoot;
 let closeButton:HTMLElement;
 let acceptButton:HTMLElement;
@@ -31,6 +32,8 @@ export class AgeAlert {
   }
   componentDidLoad() {
     Initialization();
+    body = document.querySelector("body");
+    body.style.overflowY="hidden";
   }
 }
 
@@ -46,4 +49,5 @@ function Initialization() {
 
 function removeBanner(){
  banner.style.display = "none";
+ body.style.overflowY="scroll";
 }
