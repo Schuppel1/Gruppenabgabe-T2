@@ -11,6 +11,7 @@
 | ----------- | ----------- | ----------- | -------- | ----------- |
 | `firstnav`  | `firstnav`  |             | `string` | `undefined` |
 | `secondnav` | `secondnav` |             | `string` | `undefined` |
+| `thirdnav`  | `thirdnav`  |             | `string` | `undefined` |
 
 
 ----------------------------------------------

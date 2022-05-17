@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `imgSrc` | `img-src` |             | `string` | `undefined` |
+| Property      | Attribute     | Description | Type     | Default     |
+| ------------- | ------------- | ----------- | -------- | ----------- |
+| `firstheader` | `firstheader` |             | `string` | `undefined` |
+| `imgSrc`      | `img-src`     |             | `string` | `undefined` |
 
 
 ----------------------------------------------
