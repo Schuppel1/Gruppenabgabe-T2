@@ -2,12 +2,14 @@
 <link rel="stylesheet" href="/dist/stencil-starter-on/stencil-starter-on.css" />
 
 
-<header-component firstnav="Home" secondnav="shop"></header-component>
+<header-component 
+firstnav="Home" secondnav="Shop" thirdnav="Kontakt">
+</header-component>
 <div class="bier">
     <img src="../src/components/card-flip/assets/Pils_500ml_600x600.png">
     <div class="container">
-        <title-desc texttitle="Fürstenberg Pils"
-        desc="Die lange Tradition dieses herben Bieres geht auf unseren Braumeister Josef Munz zurück, der bereits Ende des 19. Jahrhunderts eines der ersten Biere Pilsener Brauart in Deutschland braute. Dieses Pilsener erhob Kaiser Wilhelm II bei einem seiner zahlreichen Besuche im Donaueschinger Schloss zum Tafelgetränk Seiner Majestät. Noch heute brauen wir dieses Fürstenberg-Bier angelehnt an die Originalrezeptur von einst."
+        <title-desc texttitle="Alpirsbacher Pils"
+        desc="Quellfrisches, samtweiches Brauwasser von einzigartiger Güte, das im nahen Naturschutzgebiet Glaswaldwiesen entspringt, findet in unserem fein gehopften Pils seinen prickelnden Ausdruck. Alpirsbacher Klosterbräu Pils besticht durch seine hell-sonnengelbe Farbe und seinen typischen fein-herben Geschmack – dank feinstem Aromahopfen und ausgesuchter Braugerste."
         price="0.80€"></title-desc>
         <custom-button class="buy" text="Kaufen" color="red"></custom-button>
 <custom-button class="save" text="Auf Wunschliste speichern"></custom-button>
@@ -28,5 +30,6 @@
         <qr-generator class="qr-code" link="https://chart.googleapis.com/chart?cht=qr&chl=https://www.youtube.com/watch?v=tuwYG1xuYFM&chs=177x177"></qr-generator>
 
     </div>
+    <beer-rating></beer-rating>
     <impressum-component firstfooterlink="Impressum" secondfooterlink="Datenschutz"></impressum-component>
 </impressum-component>
