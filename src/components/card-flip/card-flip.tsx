@@ -19,7 +19,7 @@ export class cardFlip{
           </div>
 
         
-        <div class="container">
+        <div class="card-container">
           <div class="card">
             <div class="front">
               <slot name="front"></slot>
