@@ -15,6 +15,14 @@ export namespace Components {
     interface CardFlip {
         "imgSrc": string;
     }
+    interface ContactComponent {
+        "dsgvotext": string;
+        "emaillabel": string;
+        "mailfrom": string;
+        "mailtarget": string;
+        "msglabel": string;
+        "namelabel": string;
+    }
     interface CookieBanner {
         "buttontext": string;
         "buttontextremove": string;
@@ -75,6 +83,12 @@ declare global {
         prototype: HTMLCardFlipElement;
         new (): HTMLCardFlipElement;
     };
+    interface HTMLContactComponentElement extends Components.ContactComponent, HTMLStencilElement {
+    }
+    var HTMLContactComponentElement: {
+        prototype: HTMLContactComponentElement;
+        new (): HTMLContactComponentElement;
+    };
     interface HTMLCookieBannerElement extends Components.CookieBanner, HTMLStencilElement {
     }
     var HTMLCookieBannerElement: {
@@ -126,6 +140,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "age-alert": HTMLAgeAlertElement;
         "card-flip": HTMLCardFlipElement;
+        "contact-component": HTMLContactComponentElement;
         "cookie-banner": HTMLCookieBannerElement;
         "custom-button": HTMLCustomButtonElement;
         "example-component": HTMLExampleComponentElement;
@@ -145,6 +160,14 @@ declare namespace LocalJSX {
     }
     interface CardFlip {
         "imgSrc"?: string;
+    }
+    interface ContactComponent {
+        "dsgvotext"?: string;
+        "emaillabel"?: string;
+        "mailfrom"?: string;
+        "mailtarget"?: string;
+        "msglabel"?: string;
+        "namelabel"?: string;
     }
     interface CookieBanner {
         "buttontext"?: string;
@@ -195,6 +218,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "age-alert": AgeAlert;
         "card-flip": CardFlip;
+        "contact-component": ContactComponent;
         "cookie-banner": CookieBanner;
         "custom-button": CustomButton;
         "example-component": ExampleComponent;
@@ -211,6 +235,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "age-alert": LocalJSX.AgeAlert & JSXBase.HTMLAttributes<HTMLAgeAlertElement>;
             "card-flip": LocalJSX.CardFlip & JSXBase.HTMLAttributes<HTMLCardFlipElement>;
+            "contact-component": LocalJSX.ContactComponent & JSXBase.HTMLAttributes<HTMLContactComponentElement>;
             "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
             "custom-button": LocalJSX.CustomButton & JSXBase.HTMLAttributes<HTMLCustomButtonElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
