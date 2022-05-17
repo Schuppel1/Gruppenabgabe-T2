@@ -22,14 +22,13 @@
     buttontext="Annehmen" buttontextremove="Ablehnen"></cookie-banner>
 
     <header-component 
-    firstnav="index" secondnav="shop">
+    firstnav="Home" secondnav="Shop" thirdnav="Kontakt">
     </header-component>
 
     <picture-carousel frequency="5s"
     imgsrcs="./images/Beer1.png|./images/Beer2.jpg|./images/Beer3.jpg|./images/Beer4.jpg"></picture-carousel>
 
-
-    <card-flip>
+    <card-flip firstheader="Alpirsbacher Klosterbräu">
         <slot slot="front"> 
             <img width="100%" src="/src/components/card-flip/assets/Spezial_500ml.png" alt="Aplirsbacher Spezial" /></slot>
                 <slot slot="back">
@@ -53,11 +52,10 @@
                             <slot slot="back4">
                                 Biergenuss ohne Reue! Garantiert 0,0 % Alkohol dank modernster Entalkoholisierungstechnik.</slot>
     </card-flip>
-
-
     
+    <!-- <qr-generator link="https://chart.googleapis.com/chart?cht=qr&chl=youtube.com&chs=177x177"></qr-generator> -->
 
-    <contact-component nameLabel="Ihr Volständiger Name" emailLabel="Ihre E-Mailadresse" msgLabel="Hier können Sie ihre Nachricht eingeben" dsgvoText="Ich bestätige, dass ich mit der Verarbeitung meiner Eingaben zum Zwecke der Anfragebearbeitung, einverstanden bin."> </contact-component>
+    <contact-component secondheader="Kontakt" nameLabel="Ihr Volständiger Name" emailLabel="Ihre E-Mailadresse" msgLabel="Hier können Sie ihre Nachricht eingeben" dsgvoText="Ich bestätige, dass ich mit der Verarbeitung meiner Eingaben zum Zwecke der Anfragebearbeitung, einverstanden bin."> </contact-component>
 
     <impressum-component firstfooterlink="Impressum" secondfooterlink="Datenschutz"></impressum-component>
     </impressum-component>

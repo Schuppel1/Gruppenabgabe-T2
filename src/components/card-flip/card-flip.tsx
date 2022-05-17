@@ -8,10 +8,16 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class cardFlip{
 
   @Prop({reflect: true, mutable: true}) imgSrc: string;
+  @Prop() firstheader:string;
 
   render() {
     return (
       <Host>
+        
+        <div>
+          <h1 class="alpirsbacher">{this.firstheader}</h1>
+          </div>
+
         
         <div class="container">
           <div class="card">
