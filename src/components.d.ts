@@ -36,6 +36,8 @@ export namespace Components {
         "secondnav": string;
     }
     interface ImpressumComponent {
+        "firstfooterlink": string;
+        "secondfooterlink": string;
     }
     interface MyComponent {
         /**
@@ -165,6 +167,8 @@ declare namespace LocalJSX {
         "secondnav"?: string;
     }
     interface ImpressumComponent {
+        "firstfooterlink"?: string;
+        "secondfooterlink"?: string;
     }
     interface MyComponent {
         /**
