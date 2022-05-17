@@ -54,6 +54,11 @@ export namespace Components {
     interface QrGenerator {
         "link": string;
     }
+    interface TitleDesc {
+        "desc": string;
+        "price": string;
+        "title": string;
+    }
 }
 declare global {
     interface HTMLAgeAlertElement extends Components.AgeAlert, HTMLStencilElement {
@@ -110,6 +115,12 @@ declare global {
         prototype: HTMLQrGeneratorElement;
         new (): HTMLQrGeneratorElement;
     };
+    interface HTMLTitleDescElement extends Components.TitleDesc, HTMLStencilElement {
+    }
+    var HTMLTitleDescElement: {
+        prototype: HTMLTitleDescElement;
+        new (): HTMLTitleDescElement;
+    };
     interface HTMLElementTagNameMap {
         "age-alert": HTMLAgeAlertElement;
         "card-flip": HTMLCardFlipElement;
@@ -120,6 +131,7 @@ declare global {
         "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
         "qr-generator": HTMLQrGeneratorElement;
+        "title-desc": HTMLTitleDescElement;
     }
 }
 declare namespace LocalJSX {
@@ -171,6 +183,11 @@ declare namespace LocalJSX {
     interface QrGenerator {
         "link"?: string;
     }
+    interface TitleDesc {
+        "desc"?: string;
+        "price"?: string;
+        "title"?: string;
+    }
     interface IntrinsicElements {
         "age-alert": AgeAlert;
         "card-flip": CardFlip;
@@ -181,6 +198,7 @@ declare namespace LocalJSX {
         "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
         "qr-generator": QrGenerator;
+        "title-desc": TitleDesc;
     }
 }
 export { LocalJSX as JSX };
@@ -196,6 +214,7 @@ declare module "@stencil/core" {
             "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
+            "title-desc": LocalJSX.TitleDesc & JSXBase.HTMLAttributes<HTMLTitleDescElement>;
         }
     }
 }
