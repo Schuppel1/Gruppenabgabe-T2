@@ -7,11 +7,14 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `first`  | `first`   |             | `string` | `undefined` |
-| `last`   | `last`    |             | `string` | `undefined` |
-| `mail`   | `mail`    |             | `string` | `undefined` |
+| Property     | Attribute    | Description | Type     | Default     |
+| ------------ | ------------ | ----------- | -------- | ----------- |
+| `dsgvotext`  | `dsgvotext`  |             | `string` | `undefined` |
+| `emaillabel` | `emaillabel` |             | `string` | `undefined` |
+| `mailfrom`   | `mailfrom`   |             | `string` | `undefined` |
+| `mailtarget` | `mailtarget` |             | `string` | `undefined` |
+| `msglabel`   | `msglabel`   |             | `string` | `undefined` |
+| `namelabel`  | `namelabel`  |             | `string` | `undefined` |
 
 
 ----------------------------------------------
