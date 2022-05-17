@@ -13,24 +13,19 @@ let banner:HTMLDivElement;
 })
 export class CookieBanner {
 
-  @Prop() header:string;
+  @Prop() heading:string;
   @Prop() text:string;
   @Prop() buttontext:string;
   @Prop() buttontextremove:string;
-  @Prop() linkguide:string;
-  @Prop() link:string;
 
-  linkGuide() {
-    window.open(this.link);
-  }
+
 
   render() {
     return (
       <Host>
         <div class="container">
-              <p class="heading">{this.header && <p>{this.header}</p>}</p>
+              <p class="heading">{this.heading && <p>{this.heading}</p>}</p>
                 <p>{this.text && <p>{this.text}</p>}</p>
-              <p onClick={() => this.linkGuide()}>{this.linkguide && <p class="link">{this.linkguide}</p>}</p>
             <button id="acceptButton" class="buttons">{this.buttontext && <p>{this.buttontext}</p>}</button>
             <button id="closeButton" class="buttons">{this.buttontextremove && <p>{this.buttontextremove}</p>}</button>
         </div>

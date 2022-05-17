@@ -13,7 +13,7 @@ let banner:HTMLDivElement;
 })
 export class AgeAlert {
 
-  @Prop() header:string;
+  @Prop() heading:string;
   @Prop() text:string;
   @Prop() buttontext:string;
   @Prop() buttontextremove:string;
@@ -22,7 +22,7 @@ export class AgeAlert {
     return (
       <Host>
         <div class="container">
-              <p class="heading">{this.header && <p>{this.header}</p>}</p>
+              <p class="heading">{this.heading && <p>{this.heading}</p>}</p>
                 <p class="alertText">{this.text && <p>{this.text}</p>}</p>
             <button id="acceptButton" class="buttons">{this.buttontext && <p>{this.buttontext}</p>}</button>
             <button id="closeButton" class="buttons">{this.buttontextremove && <p>{this.buttontextremove}</p>}</button>

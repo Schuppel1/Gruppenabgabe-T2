@@ -9,7 +9,7 @@ export namespace Components {
     interface AgeAlert {
         "buttontext": string;
         "buttontextremove": string;
-        "header": string;
+        "heading": string;
         "text": string;
     }
     interface CardFlip {
@@ -26,9 +26,7 @@ export namespace Components {
     interface CookieBanner {
         "buttontext": string;
         "buttontextremove": string;
-        "header": string;
-        "link": string;
-        "linkguide": string;
+        "heading": string;
         "text": string;
     }
     interface CustomButton {
@@ -190,7 +188,7 @@ declare namespace LocalJSX {
     interface AgeAlert {
         "buttontext"?: string;
         "buttontextremove"?: string;
-        "header"?: string;
+        "heading"?: string;
         "text"?: string;
     }
     interface CardFlip {
@@ -207,9 +205,7 @@ declare namespace LocalJSX {
     interface CookieBanner {
         "buttontext"?: string;
         "buttontextremove"?: string;
-        "header"?: string;
-        "link"?: string;
-        "linkguide"?: string;
+        "heading"?: string;
         "text"?: string;
     }
     interface CustomButton {
