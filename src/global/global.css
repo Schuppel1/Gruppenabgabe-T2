@@ -1,3 +1,9 @@
 :root {
     --app-example-var: black;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 0;
+    margin:0;
+}
