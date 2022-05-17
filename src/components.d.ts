@@ -6,11 +6,52 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+
     interface BeerRating {
+
+    interface AgeAlert {
+        "buttontext": string;
+        "buttontextremove": string;
+        "heading": string;
+        "text": string;
+    }
+    interface CardFlip {
+        "firstheader": string;
+        "imgSrc": string;
+    }
+    interface ContactComponent {
+        "dsgvotext": string;
+        "emaillabel": string;
+        "mailfrom": string;
+        "mailtarget": string;
+        "msglabel": string;
+        "namelabel": string;
+        "secondheader": string;
+    }
+    interface CookieBanner {
+        "buttontext": string;
+        "buttontextremove": string;
+        "heading": string;
+        "text": string;
+    }
+    interface CustomButton {
+        "color"?: string;
+        "text": string;
+
+     
     }
     interface ExampleComponent {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
+    }
+    interface HeaderComponent {
+        "firstnav": string;
+        "secondnav": string;
+        "thirdnav": string;
+    }
+    interface ImpressumComponent {
+        "firstfooterlink": string;
+        "secondfooterlink": string;
     }
     interface MyComponent {
         /**
@@ -26,13 +67,74 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PictureCarousel {
+        "frequency": string;
+        "imgsrcs": string;
+    }
+    interface PriceTable {
+        "detailone": string;
+        "detailoneone": string;
+        "detailonethree": string;
+        "detailonetwo": string;
+        "detailthree": string;
+        "detailthreeone": string;
+        "detailthreethree": string;
+        "detailthreetwo": string;
+        "detailtwo": string;
+        "detailtwoone": string;
+        "detailtwothree": string;
+        "detailtwotwo": string;
+        "product": string;
+        "productthree": string;
+        "producttwo": string;
+    }
+    interface QrGenerator {
+        "link": string;
+    }
+    interface TitleDesc {
+        "desc": string;
+        "price": string;
+        "texttitle": string;
+    }
 }
 declare global {
+
     interface HTMLBeerRatingElement extends Components.BeerRating, HTMLStencilElement {
     }
     var HTMLBeerRatingElement: {
         prototype: HTMLBeerRatingElement;
         new (): HTMLBeerRatingElement;
+
+    interface HTMLAgeAlertElement extends Components.AgeAlert, HTMLStencilElement {
+    }
+    var HTMLAgeAlertElement: {
+        prototype: HTMLAgeAlertElement;
+        new (): HTMLAgeAlertElement;
+    };
+    interface HTMLCardFlipElement extends Components.CardFlip, HTMLStencilElement {
+    }
+    var HTMLCardFlipElement: {
+        prototype: HTMLCardFlipElement;
+        new (): HTMLCardFlipElement;
+    };
+    interface HTMLContactComponentElement extends Components.ContactComponent, HTMLStencilElement {
+    }
+    var HTMLContactComponentElement: {
+        prototype: HTMLContactComponentElement;
+        new (): HTMLContactComponentElement;
+    };
+    interface HTMLCookieBannerElement extends Components.CookieBanner, HTMLStencilElement {
+    }
+    var HTMLCookieBannerElement: {
+        prototype: HTMLCookieBannerElement;
+        new (): HTMLCookieBannerElement;
+    };
+    interface HTMLCustomButtonElement extends Components.CustomButton, HTMLStencilElement {
+    }
+    var HTMLCustomButtonElement: {
+        prototype: HTMLCustomButtonElement;
+        new (): HTMLCustomButtonElement;
+
     };
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
     }
@@ -40,24 +142,114 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLHeaderComponentElement extends Components.HeaderComponent, HTMLStencilElement {
+    }
+    var HTMLHeaderComponentElement: {
+        prototype: HTMLHeaderComponentElement;
+        new (): HTMLHeaderComponentElement;
+    };
+    interface HTMLImpressumComponentElement extends Components.ImpressumComponent, HTMLStencilElement {
+    }
+    var HTMLImpressumComponentElement: {
+        prototype: HTMLImpressumComponentElement;
+        new (): HTMLImpressumComponentElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPictureCarouselElement extends Components.PictureCarousel, HTMLStencilElement {
+    }
+    var HTMLPictureCarouselElement: {
+        prototype: HTMLPictureCarouselElement;
+        new (): HTMLPictureCarouselElement;
+    };
+    interface HTMLPriceTableElement extends Components.PriceTable, HTMLStencilElement {
+    }
+    var HTMLPriceTableElement: {
+        prototype: HTMLPriceTableElement;
+        new (): HTMLPriceTableElement;
+    };
+    interface HTMLQrGeneratorElement extends Components.QrGenerator, HTMLStencilElement {
+    }
+    var HTMLQrGeneratorElement: {
+        prototype: HTMLQrGeneratorElement;
+        new (): HTMLQrGeneratorElement;
+    };
+    interface HTMLTitleDescElement extends Components.TitleDesc, HTMLStencilElement {
+    }
+    var HTMLTitleDescElement: {
+        prototype: HTMLTitleDescElement;
+        new (): HTMLTitleDescElement;
+    };
     interface HTMLElementTagNameMap {
+
         "beer-rating": HTMLBeerRatingElement;
+
+        "age-alert": HTMLAgeAlertElement;
+        "card-flip": HTMLCardFlipElement;
+        "contact-component": HTMLContactComponentElement;
+        "cookie-banner": HTMLCookieBannerElement;
+        "custom-button": HTMLCustomButtonElement;
+
         "example-component": HTMLExampleComponentElement;
+        "header-component": HTMLHeaderComponentElement;
+        "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
+        "picture-carousel": HTMLPictureCarouselElement;
+        "price-table": HTMLPriceTableElement;
+        "qr-generator": HTMLQrGeneratorElement;
+        "title-desc": HTMLTitleDescElement;
     }
 }
 declare namespace LocalJSX {
+
     interface BeerRating {
+
+    interface AgeAlert {
+        "buttontext"?: string;
+        "buttontextremove"?: string;
+        "heading"?: string;
+        "text"?: string;
+    }
+    interface CardFlip {
+        "firstheader"?: string;
+        "imgSrc"?: string;
+    }
+    interface ContactComponent {
+        "dsgvotext"?: string;
+        "emaillabel"?: string;
+        "mailfrom"?: string;
+        "mailtarget"?: string;
+        "msglabel"?: string;
+        "namelabel"?: string;
+        "secondheader"?: string;
+    }
+    interface CookieBanner {
+        "buttontext"?: string;
+        "buttontextremove"?: string;
+        "heading"?: string;
+        "text"?: string;
+    }
+    interface CustomButton {
+        "color"?: string;
+        "text"?: string;
+
     }
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface HeaderComponent {
+        "firstnav"?: string;
+        "secondnav"?: string;
+        "thirdnav"?: string;
+    }
+    interface ImpressumComponent {
+        "firstfooterlink"?: string;
+        "secondfooterlink"?: string;
     }
     interface MyComponent {
         /**
@@ -73,19 +265,76 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PictureCarousel {
+        "frequency"?: string;
+        "imgsrcs"?: string;
+    }
+    interface PriceTable {
+        "detailone"?: string;
+        "detailoneone"?: string;
+        "detailonethree"?: string;
+        "detailonetwo"?: string;
+        "detailthree"?: string;
+        "detailthreeone"?: string;
+        "detailthreethree"?: string;
+        "detailthreetwo"?: string;
+        "detailtwo"?: string;
+        "detailtwoone"?: string;
+        "detailtwothree"?: string;
+        "detailtwotwo"?: string;
+        "product"?: string;
+        "productthree"?: string;
+        "producttwo"?: string;
+    }
+    interface QrGenerator {
+        "link"?: string;
+    }
+    interface TitleDesc {
+        "desc"?: string;
+        "price"?: string;
+        "texttitle"?: string;
+    }
     interface IntrinsicElements {
+
         "beer-rating": BeerRating;
+
+        "age-alert": AgeAlert;
+        "card-flip": CardFlip;
+        "contact-component": ContactComponent;
+        "cookie-banner": CookieBanner;
+        "custom-button": CustomButton;
+
         "example-component": ExampleComponent;
+        "header-component": HeaderComponent;
+        "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
+        "picture-carousel": PictureCarousel;
+        "price-table": PriceTable;
+        "qr-generator": QrGenerator;
+        "title-desc": TitleDesc;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+
             "beer-rating": LocalJSX.BeerRating & JSXBase.HTMLAttributes<HTMLBeerRatingElement>;
+
+            "age-alert": LocalJSX.AgeAlert & JSXBase.HTMLAttributes<HTMLAgeAlertElement>;
+            "card-flip": LocalJSX.CardFlip & JSXBase.HTMLAttributes<HTMLCardFlipElement>;
+            "contact-component": LocalJSX.ContactComponent & JSXBase.HTMLAttributes<HTMLContactComponentElement>;
+            "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
+            "custom-button": LocalJSX.CustomButton & JSXBase.HTMLAttributes<HTMLCustomButtonElement>;
+
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
+            "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "picture-carousel": LocalJSX.PictureCarousel & JSXBase.HTMLAttributes<HTMLPictureCarouselElement>;
+            "price-table": LocalJSX.PriceTable & JSXBase.HTMLAttributes<HTMLPriceTableElement>;
+            "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
+            "title-desc": LocalJSX.TitleDesc & JSXBase.HTMLAttributes<HTMLTitleDescElement>;
         }
     }
 }

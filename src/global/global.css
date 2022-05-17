@@ -1,3 +1,50 @@
 :root {
     --app-example-var: black;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 0;
+    margin:0;
+}
+.bier{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.buy{
+
+    margin:0 0 10px 0 ;
+}
+
+.save{
+
+}
+
+.pricetable{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 5% 
+}
+
+.qr-container{
+    margin-top: 20%;
+    margin-left: 30%;
+    background-color: #FEAA00;
+    width: 42%;
+    height: 30%;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.qr-container h4{
+    position: relative;
+    margin-left: 32%;
+}
+
+.qr-code{
+    position: relative;
+    margin-left: 39%; 
+}
