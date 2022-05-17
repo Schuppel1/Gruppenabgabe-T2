@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `test`   | `test`    |             | `string` | `undefined` |
+| `color`  | `color`   |             | `string` | `undefined` |
 | `text`   | `text`    |             | `string` | `undefined` |
 
 
