@@ -134,7 +134,7 @@ declare global {
     var HTMLPictureCarouselElement: {
         prototype: HTMLPictureCarouselElement;
         new (): HTMLPictureCarouselElement;
-    }
+    };
     interface HTMLQrGeneratorElement extends Components.QrGenerator, HTMLStencilElement {
     }
     var HTMLQrGeneratorElement: {
