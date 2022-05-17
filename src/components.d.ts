@@ -13,6 +13,7 @@ export namespace Components {
         "text": string;
     }
     interface CardFlip {
+        "firstheader": string;
         "imgSrc": string;
     }
     interface ContactComponent {
@@ -22,6 +23,7 @@ export namespace Components {
         "mailtarget": string;
         "msglabel": string;
         "namelabel": string;
+        "secondheader": string;
     }
     interface CookieBanner {
         "buttontext": string;
@@ -42,6 +44,7 @@ export namespace Components {
     interface HeaderComponent {
         "firstnav": string;
         "secondnav": string;
+        "thirdnav": string;
     }
     interface ImpressumComponent {
         "firstfooterlink": string;
@@ -194,6 +197,7 @@ declare namespace LocalJSX {
         "text"?: string;
     }
     interface CardFlip {
+        "firstheader"?: string;
         "imgSrc"?: string;
     }
     interface ContactComponent {
@@ -203,6 +207,7 @@ declare namespace LocalJSX {
         "mailtarget"?: string;
         "msglabel"?: string;
         "namelabel"?: string;
+        "secondheader"?: string;
     }
     interface CookieBanner {
         "buttontext"?: string;
@@ -223,6 +228,7 @@ declare namespace LocalJSX {
     interface HeaderComponent {
         "firstnav"?: string;
         "secondnav"?: string;
+        "thirdnav"?: string;
     }
     interface ImpressumComponent {
         "firstfooterlink"?: string;

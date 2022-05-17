@@ -1,3 +1,14 @@
+:host {
+  display: block;
+}
+
+.alpirsbacher {
+  background-color: #342628;
+  color: #FEAA00;
+  text-align: center;
+  padding: 30px;
+}
+
 .container {
   display: flex;
 }
@@ -21,7 +32,6 @@
 .back4 {
   height: 100%;
   width: 100%;
-  color: black;
   text-align: center;
   backface-visibility: hidden;
   position: absolute;
