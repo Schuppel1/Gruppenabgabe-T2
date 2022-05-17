@@ -43,11 +43,15 @@ function Initialization() {
   acceptButton = componentElement.querySelector("#acceptButton");
   banner = componentElement.querySelector(".container");
 
-  closeButton.addEventListener("click", removeBanner);
+  closeButton.addEventListener("click", reject);
   acceptButton.addEventListener("click", removeBanner);
 }
 
 function removeBanner(){
  banner.style.display = "none";
  body.style.overflowY="scroll";
+}
+
+function reject () {
+  alert("Du bist noch keine 18 Jahre alt, also hast du auf unserer Seite nichts verloren")
 }

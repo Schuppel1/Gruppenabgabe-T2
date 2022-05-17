@@ -15,20 +15,20 @@
   margin-right: 50px;
   border-radius: 10px;
   background-image: url(/src/components/age-alert/asset/Bier_2_2400x1350.jpeg);
-  background-size: auto auto;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat:no-repeat;
   padding: 10px 40px 30px 40px;
 }
 
 #closeButton{
   background-color: #FEAA00;
-  margin-left: 50px;
+  margin-left: 5%;
 
 }
 
 #acceptButton{
   background-color: #FEAA00;
-  margin-right: 50px;
+  margin-right: 10%;
 
 }
 
