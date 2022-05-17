@@ -59,7 +59,7 @@ export namespace Components {
     interface TitleDesc {
         "desc": string;
         "price": string;
-        "title": string;
+        "texttitle": string;
     }
 }
 declare global {
@@ -190,7 +190,7 @@ declare namespace LocalJSX {
     interface TitleDesc {
         "desc"?: string;
         "price"?: string;
-        "title"?: string;
+        "texttitle"?: string;
     }
     interface IntrinsicElements {
         "age-alert": AgeAlert;
