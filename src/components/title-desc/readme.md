@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `desc`   | `desc`    |             | `string` | `undefined` |
-| `price`  | `price`   |             | `string` | `undefined` |
-| `title`  | `title`   |             | `string` | `undefined` |
+| Property    | Attribute   | Description | Type     | Default     |
+| ----------- | ----------- | ----------- | -------- | ----------- |
+| `desc`      | `desc`      |             | `string` | `undefined` |
+| `price`     | `price`     |             | `string` | `undefined` |
+| `texttitle` | `texttitle` |             | `string` | `undefined` |
 
 
 ----------------------------------------------
