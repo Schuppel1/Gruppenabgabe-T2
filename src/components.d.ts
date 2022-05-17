@@ -27,6 +27,10 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface HeaderComponent {
+        "firstnav": string;
+        "secondnav": string;
+    }
     interface ImpressumComponent {
     }
     interface MyComponent {
@@ -72,6 +76,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLHeaderComponentElement extends Components.HeaderComponent, HTMLStencilElement {
+    }
+    var HTMLHeaderComponentElement: {
+        prototype: HTMLHeaderComponentElement;
+        new (): HTMLHeaderComponentElement;
+    };
     interface HTMLImpressumComponentElement extends Components.ImpressumComponent, HTMLStencilElement {
     }
     var HTMLImpressumComponentElement: {
@@ -95,6 +105,7 @@ declare global {
         "card-flip": HTMLCardFlipElement;
         "cookie-banner": HTMLCookieBannerElement;
         "example-component": HTMLExampleComponentElement;
+        "header-component": HTMLHeaderComponentElement;
         "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
         "qr-generator": HTMLQrGeneratorElement;
@@ -122,6 +133,10 @@ declare namespace LocalJSX {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
     }
+    interface HeaderComponent {
+        "firstnav"?: string;
+        "secondnav"?: string;
+    }
     interface ImpressumComponent {
     }
     interface MyComponent {
@@ -146,6 +161,7 @@ declare namespace LocalJSX {
         "card-flip": CardFlip;
         "cookie-banner": CookieBanner;
         "example-component": ExampleComponent;
+        "header-component": HeaderComponent;
         "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
         "qr-generator": QrGenerator;
@@ -159,6 +175,7 @@ declare module "@stencil/core" {
             "card-flip": LocalJSX.CardFlip & JSXBase.HTMLAttributes<HTMLCardFlipElement>;
             "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
             "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
