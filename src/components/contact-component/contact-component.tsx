@@ -25,6 +25,7 @@ export class ContactComponent {
           <h1 class="contact">{this.secondheader}</h1>
           </div>
 
+        <div class="contact-container">
         <form id="ft-form" method="POST" accept-charset="UTF-8">
           <fieldset>
             <label>
@@ -50,6 +51,7 @@ export class ContactComponent {
             <input type="submit" value="Absenden"></input>
           </div>
         </form>
+        </div>
         <slot></slot>
       </Host>
     );

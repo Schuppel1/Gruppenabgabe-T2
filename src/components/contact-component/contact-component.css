@@ -10,10 +10,17 @@
   padding: 30px;
 }
 
+.contact-container {
+  display: flex;
+  position: relative;
+  margin-left: 18%;
+}
+
 #ft-form {
   font-family: inherit;
   font-size: 100%;
-  line-height: 1.15
+  line-height: 1.15;
+  width: 80%;
 }
 #ft-form *,
 #ft-form ::after,
