@@ -6,14 +6,13 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-
-    interface BeerRating {
-
     interface AgeAlert {
         "buttontext": string;
         "buttontextremove": string;
         "heading": string;
         "text": string;
+    }
+    interface BeerRating {
     }
     interface CardFlip {
         "firstheader": string;
@@ -37,8 +36,6 @@ export namespace Components {
     interface CustomButton {
         "color"?: string;
         "text": string;
-
-     
     }
     interface ExampleComponent {
         "exampleProp": string;
@@ -98,18 +95,17 @@ export namespace Components {
     }
 }
 declare global {
-
-    interface HTMLBeerRatingElement extends Components.BeerRating, HTMLStencilElement {
-    }
-    var HTMLBeerRatingElement: {
-        prototype: HTMLBeerRatingElement;
-        new (): HTMLBeerRatingElement;
-
     interface HTMLAgeAlertElement extends Components.AgeAlert, HTMLStencilElement {
     }
     var HTMLAgeAlertElement: {
         prototype: HTMLAgeAlertElement;
         new (): HTMLAgeAlertElement;
+    };
+    interface HTMLBeerRatingElement extends Components.BeerRating, HTMLStencilElement {
+    }
+    var HTMLBeerRatingElement: {
+        prototype: HTMLBeerRatingElement;
+        new (): HTMLBeerRatingElement;
     };
     interface HTMLCardFlipElement extends Components.CardFlip, HTMLStencilElement {
     }
@@ -134,7 +130,6 @@ declare global {
     var HTMLCustomButtonElement: {
         prototype: HTMLCustomButtonElement;
         new (): HTMLCustomButtonElement;
-
     };
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
     }
@@ -185,15 +180,12 @@ declare global {
         new (): HTMLTitleDescElement;
     };
     interface HTMLElementTagNameMap {
-
-        "beer-rating": HTMLBeerRatingElement;
-
         "age-alert": HTMLAgeAlertElement;
+        "beer-rating": HTMLBeerRatingElement;
         "card-flip": HTMLCardFlipElement;
         "contact-component": HTMLContactComponentElement;
         "cookie-banner": HTMLCookieBannerElement;
         "custom-button": HTMLCustomButtonElement;
-
         "example-component": HTMLExampleComponentElement;
         "header-component": HTMLHeaderComponentElement;
         "impressum-component": HTMLImpressumComponentElement;
@@ -205,14 +197,13 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-
-    interface BeerRating {
-
     interface AgeAlert {
         "buttontext"?: string;
         "buttontextremove"?: string;
         "heading"?: string;
         "text"?: string;
+    }
+    interface BeerRating {
     }
     interface CardFlip {
         "firstheader"?: string;
@@ -236,7 +227,6 @@ declare namespace LocalJSX {
     interface CustomButton {
         "color"?: string;
         "text"?: string;
-
     }
     interface ExampleComponent {
         "exampleProp"?: string;
@@ -295,15 +285,12 @@ declare namespace LocalJSX {
         "texttitle"?: string;
     }
     interface IntrinsicElements {
-
-        "beer-rating": BeerRating;
-
         "age-alert": AgeAlert;
+        "beer-rating": BeerRating;
         "card-flip": CardFlip;
         "contact-component": ContactComponent;
         "cookie-banner": CookieBanner;
         "custom-button": CustomButton;
-
         "example-component": ExampleComponent;
         "header-component": HeaderComponent;
         "impressum-component": ImpressumComponent;
@@ -318,15 +305,12 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-
-            "beer-rating": LocalJSX.BeerRating & JSXBase.HTMLAttributes<HTMLBeerRatingElement>;
-
             "age-alert": LocalJSX.AgeAlert & JSXBase.HTMLAttributes<HTMLAgeAlertElement>;
+            "beer-rating": LocalJSX.BeerRating & JSXBase.HTMLAttributes<HTMLBeerRatingElement>;
             "card-flip": LocalJSX.CardFlip & JSXBase.HTMLAttributes<HTMLCardFlipElement>;
             "contact-component": LocalJSX.ContactComponent & JSXBase.HTMLAttributes<HTMLContactComponentElement>;
             "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
             "custom-button": LocalJSX.CustomButton & JSXBase.HTMLAttributes<HTMLCustomButtonElement>;
-
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
             "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
