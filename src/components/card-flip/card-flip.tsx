@@ -17,9 +17,8 @@ export class cardFlip{
         <div>
           <h1 class="alpirsbacher">{this.firstheader}</h1>
           </div>
-
         
-        <div class="container">
+        <div class="card-container">
           <div class="card">
             <div class="front">
               <slot name="front"></slot>
