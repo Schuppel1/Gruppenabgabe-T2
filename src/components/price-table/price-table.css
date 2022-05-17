@@ -1,10 +1,11 @@
 *{
-  background-color: #fffbfb;
+  background-color: #34262876;
+
 }
 
 
 table{
-  width:30%;
+  width:60%;
   table-layout: fixed;
 }
 th{
@@ -12,8 +13,9 @@ th{
   text-align: left;
   font-weight: 500;
   font-size: 12px;
-  color: rgb(0, 0, 0);
+  color: #FFF;
   text-transform: uppercase;
+
 }
 td{
   padding: 15px;
@@ -21,15 +23,8 @@ td{
   vertical-align:middle;
   font-weight: 300;
   font-size: 12px;
-  color: rgb(0, 0, 0);
-  border-bottom: solid 1px rgba(255,255,255,0.1);
+  color: #FFF;
 }
 
 
-/* demo styles */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-body{
-  font-family: 'Roboto', sans-serif;
-}
 
