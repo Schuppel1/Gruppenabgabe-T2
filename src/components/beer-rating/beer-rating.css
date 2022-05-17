@@ -32,10 +32,11 @@
 }
 
 .beer img.bottom{
-  top: -42.4px;
+  top: -35.5px;
   position: relative;
   z-index: -20; 
 }
+
 
 
 .beer img.top:hover {
@@ -50,6 +51,7 @@
 }
 
 #rate-wrapper {
+
   position: relative;
 
   display: inline-block;
@@ -64,6 +66,7 @@
 }
 
 .beer-rating {
+
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;

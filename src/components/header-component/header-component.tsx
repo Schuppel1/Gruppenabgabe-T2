@@ -20,8 +20,8 @@ export class headerComponent {
        <nav>
         <h2>Bier-Blog</h2>
           <ul>
-            <li><a href="./index.html" >{this.firstnav}</a></li>
-            <li><a href="./ON-your-styleguide/shop.html">{this.secondnav}</a></li>
+            <li><a href="ON-your-styleguide/index.html" >{this.firstnav}</a></li>
+            <li><a href="ON-your-styleguide/shop.html">{this.secondnav}</a></li>
             <li><a href="#contact">{this.thirdnav}</a></li>
           </ul>
         </nav>
