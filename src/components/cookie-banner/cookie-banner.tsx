@@ -45,11 +45,11 @@ function Initialization() {
   acceptButton = componentElement.querySelector("#acceptButton");
   banner = componentElement.querySelector(".container");
 
-  closeButton.addEventListener("click", removeBanner);
-  acceptButton.addEventListener("click", removeBanner);
+  closeButton.addEventListener("click", removeAlert);
+  acceptButton.addEventListener("click", removeAlert);
 }
 
-function removeBanner(){
+function removeAlert(){
   banner.style.display = "none";
   body.style.overflowY="scroll";
 }
