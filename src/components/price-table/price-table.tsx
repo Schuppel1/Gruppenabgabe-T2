@@ -34,6 +34,7 @@ export class PriceTable {
       <Host>
         <slot>
           <table>
+            
             <tr>
             <th> </th>
               <th>{this.product}</th>
