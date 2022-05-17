@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface BeerRating {
+    }
     interface ExampleComponent {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
@@ -26,6 +28,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLBeerRatingElement extends Components.BeerRating, HTMLStencilElement {
+    }
+    var HTMLBeerRatingElement: {
+        prototype: HTMLBeerRatingElement;
+        new (): HTMLBeerRatingElement;
+    };
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
     }
     var HTMLExampleComponentElement: {
@@ -39,11 +47,14 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "beer-rating": HTMLBeerRatingElement;
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface BeerRating {
+    }
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
@@ -63,6 +74,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "beer-rating": BeerRating;
         "example-component": ExampleComponent;
         "my-component": MyComponent;
     }
@@ -71,6 +83,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "beer-rating": LocalJSX.BeerRating & JSXBase.HTMLAttributes<HTMLBeerRatingElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }

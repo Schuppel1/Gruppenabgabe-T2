@@ -1,0 +1,72 @@
+:host {
+  font-family: "Calibri", sans-serif;
+  position: relative;
+  margin: 20px;
+  left: 52%;
+}
+
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+
+.beer-rating label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.beer img {
+  height: 35px;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.beer img.bottom{
+  top: -42.4px;
+  position: relative;
+  z-index: -20; 
+}
+
+
+.beer img.top:hover {
+  opacity:0;
+}
+
+
+.beer-rating label:hover,
+.beer-rating label:hover ~ label {
+  border: 10px;
+  border-color: rgb(228, 170, 46);
+}
+
+#rate-wrapper {
+  position: relative;
+
+  display: inline-block;
+  transform: translate(-50%, -50%);
+  margin: 50px 0;
+  width: 250px;
+  text-align: center;
+}
+
+.beer-rating input {
+  display: none;
+}
+
+.beer-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 32px;
+}
