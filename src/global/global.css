@@ -19,6 +19,9 @@ body {
     margin:0 0 10px 0 ;
 }
 
+.card-container {
+    display: flex;
+  }
 .pricetable{
     position: absolute;
     margin-left: 30%;

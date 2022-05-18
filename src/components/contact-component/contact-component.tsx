@@ -59,16 +59,15 @@ export class ContactComponent {
   componentDidLoad() {
     initializEventlistener()
   }
-}
+} 
 
 function submitData() {
-  alert("Die Email wurde versendet!. Vielen Dank")
+  alert("Die Email wurde an "+this.mailtarget +" versendet!.Vielen Dank")
 }
 
 
 function initializEventlistener() {
   const componentElement = document.querySelector("contact-component").shadowRoot;
   componentElement.querySelector("#contact-form").addEventListener("submit", submitData);
-
 }
 
