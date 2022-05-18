@@ -26,7 +26,7 @@ export class ContactComponent {
           </div>
 
         <div class="contact-container">
-        <form id="ft-form" method="POST" accept-charset="UTF-8">
+        <form id="contact-form" method="POST" accept-charset="UTF-8">
           <fieldset>
             <label>
               {this.namelabel}
