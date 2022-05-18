@@ -28,7 +28,7 @@ let currentImageNumber: number = 2;
 export class PictureCarousel {
 
   @Prop() imgsrcs: string;
-  @Prop() frequency: string;
+  @Prop() frequency?: string;
 
   constructor() {
     imageReferences = this.imgsrcs.split("|");

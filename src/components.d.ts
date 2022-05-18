@@ -65,7 +65,7 @@ export namespace Components {
         "middle": string;
     }
     interface PictureCarousel {
-        "frequency": string;
+        "frequency"?: string;
         "imgsrcs": string;
     }
     interface PriceTable {
