@@ -8,7 +8,6 @@ import { Component, Host, h, Prop } from '@stencil/core';
 
 export class headerComponent {
 
-  @Prop({reflect:true, mutable:true})
   @Prop() firstnav:string;
   @Prop() secondnav:string;
   @Prop() thirdnav:string;

@@ -8,7 +8,6 @@ import { Component, Host, h, Prop } from '@stencil/core';
 
 export class impressumComponent {
 
-  @Prop({reflect:true, mutable:true})
   @Prop() firstfooterlink:string;
   @Prop() secondfooterlink:string;
  
