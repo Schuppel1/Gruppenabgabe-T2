@@ -68,7 +68,7 @@ function submitData(){
 
 function initializEventlistener() {
   const componentElement =  document.querySelector("contact-component").shadowRoot;
-  componentElement.querySelector("#ft-form").addEventListener("submit",submitData);
+  componentElement.querySelector("#contact-form").addEventListener("submit",submitData);
 
 }
 
