@@ -48,3 +48,7 @@ justify-content: center;
     position: relative;
     margin-left: 39%; 
 }
+
+.card-container {
+    display: flex;
+  }

@@ -5,58 +5,32 @@ import { Component, Host, h, Prop } from '@stencil/core';
   styleUrl: 'card-flip.css',
   shadow: true
 })
-export class cardFlip{
 
-  @Prop({reflect: true, mutable: true}) imgSrc: string;
-  @Prop() firstheader:string;
+export class cardFlip {
+
+  @Prop() imgsrc: string;
+  @Prop() altimgtext: string;
+  @Prop() text: string;
+
+  constructor() {
+  }
 
   render() {
     return (
       <Host>
-        
-        <div>
-          <h1 class="alpirsbacher">{this.firstheader}</h1>
-          </div>
-        
-        <div class="card-container">
+
           <div class="card">
             <div class="front">
-              <slot name="front"></slot>
+                <img src={this.imgsrc} alt={this.altimgtext} id="myCard" />
             </div>
             <div class="back">
-              <slot name="back"></slot>
+                {this.text}
             </div>
-            </div>
-
-            <div class="card">
-            <div class="front2">
-              <slot name="front2"></slot>
-            </div>
-            <div class="back2">
-              <slot name="back2"></slot>
-            </div>
-            </div>
-
-            <div class="card">
-          <div class="front3">
-              <slot name="front3"></slot>
-            </div>
-            <div class="back3">
-              <slot name="back3"></slot>
-            </div>
-            </div>
-
-            <div class="card">
-          <div class="front4">
-              <slot name="front4"></slot>
-            </div>
-            <div class="back4">
-              <slot name="back4"></slot>
-            </div>
-            </div>
-
-            </div>
+          </div>
+        
       </Host>
     );
-  }
+  }  
 }
+
+

@@ -15,8 +15,9 @@ export namespace Components {
     interface BeerRating {
     }
     interface CardFlip {
-        "firstheader": string;
-        "imgSrc": string;
+        "altimgtext": string;
+        "imgsrc": string;
+        "text": string;
     }
     interface ContactComponent {
         "dsgvotext": string;
@@ -206,8 +207,9 @@ declare namespace LocalJSX {
     interface BeerRating {
     }
     interface CardFlip {
-        "firstheader"?: string;
-        "imgSrc"?: string;
+        "altimgtext"?: string;
+        "imgsrc"?: string;
+        "text"?: string;
     }
     interface ContactComponent {
         "dsgvotext"?: string;
