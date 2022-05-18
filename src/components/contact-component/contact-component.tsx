@@ -15,15 +15,10 @@ export class ContactComponent {
   @Prop() dsgvotext: string;
   @Prop() mailtarget: string;
   @Prop() mailfrom: string;
-  @Prop() secondheader: string;
 
   render() {
     return (
       <Host>
-
-        <div>
-          <h1 class="contact">{this.secondheader}</h1>
-        </div>
 
         <div class="contact-container">
           <form id="contact-form" method="POST" accept-charset="UTF-8">

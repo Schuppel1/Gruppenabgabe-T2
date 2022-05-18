@@ -52,3 +52,19 @@ justify-content: center;
 .card-container {
     display: flex;
   }
+
+.contact {
+    background-color: #342628;
+    color: #FEAA00;
+    text-align: center;
+    padding: 30px;
+    margin-top: 500px;
+}
+
+.alpirsbacher {
+    background-color: #342628;
+    color: #FEAA00;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}

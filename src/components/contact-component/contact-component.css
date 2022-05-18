@@ -1,13 +1,6 @@
 :host {
   display: block;
-  margin-top: 600px;
-}
-
-.contact {
-  background-color: #342628;
-  color: #FEAA00;
-  text-align: center;
-  padding: 30px;
+  margin-top: 10px;
 }
 
 .contact-container {

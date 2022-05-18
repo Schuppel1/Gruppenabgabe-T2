@@ -26,7 +26,6 @@ export namespace Components {
         "mailtarget": string;
         "msglabel": string;
         "namelabel": string;
-        "secondheader": string;
     }
     interface CookieBanner {
         "buttontext": string;
@@ -218,7 +217,6 @@ declare namespace LocalJSX {
         "mailtarget"?: string;
         "msglabel"?: string;
         "namelabel"?: string;
-        "secondheader"?: string;
     }
     interface CookieBanner {
         "buttontext"?: string;
