@@ -88,6 +88,8 @@ export namespace Components {
     interface QrGenerator {
         "link": string;
     }
+    interface ScrollButton {
+    }
     interface TitleDesc {
         "desc": string;
         "price": string;
@@ -173,6 +175,12 @@ declare global {
         prototype: HTMLQrGeneratorElement;
         new (): HTMLQrGeneratorElement;
     };
+    interface HTMLScrollButtonElement extends Components.ScrollButton, HTMLStencilElement {
+    }
+    var HTMLScrollButtonElement: {
+        prototype: HTMLScrollButtonElement;
+        new (): HTMLScrollButtonElement;
+    };
     interface HTMLTitleDescElement extends Components.TitleDesc, HTMLStencilElement {
     }
     var HTMLTitleDescElement: {
@@ -193,6 +201,7 @@ declare global {
         "picture-carousel": HTMLPictureCarouselElement;
         "price-table": HTMLPriceTableElement;
         "qr-generator": HTMLQrGeneratorElement;
+        "scroll-button": HTMLScrollButtonElement;
         "title-desc": HTMLTitleDescElement;
     }
 }
@@ -279,6 +288,8 @@ declare namespace LocalJSX {
     interface QrGenerator {
         "link"?: string;
     }
+    interface ScrollButton {
+    }
     interface TitleDesc {
         "desc"?: string;
         "price"?: string;
@@ -298,6 +309,7 @@ declare namespace LocalJSX {
         "picture-carousel": PictureCarousel;
         "price-table": PriceTable;
         "qr-generator": QrGenerator;
+        "scroll-button": ScrollButton;
         "title-desc": TitleDesc;
     }
 }
@@ -318,6 +330,7 @@ declare module "@stencil/core" {
             "picture-carousel": LocalJSX.PictureCarousel & JSXBase.HTMLAttributes<HTMLPictureCarouselElement>;
             "price-table": LocalJSX.PriceTable & JSXBase.HTMLAttributes<HTMLPriceTableElement>;
             "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
+            "scroll-button": LocalJSX.ScrollButton & JSXBase.HTMLAttributes<HTMLScrollButtonElement>;
             "title-desc": LocalJSX.TitleDesc & JSXBase.HTMLAttributes<HTMLTitleDescElement>;
         }
     }
